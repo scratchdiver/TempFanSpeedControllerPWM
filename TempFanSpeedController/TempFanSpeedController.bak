@@ -1,0 +1,126 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 5D49D788
+P 2900 4000
+F 0 "U1" H 2370 4046 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 2370 3955 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2900 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2900 4000 50  0001 C CNN
+	1    2900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5D49D8CF
+P 5200 2100
+F 0 "J1" H 5250 2417 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 5250 2326 50  0000 C CNN
+F 2 "" H 5200 2100 50  0001 C CNN
+F 3 "~" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:DS18B20 U2
+U 1 1 5D49D9D1
+P 5100 3900
+F 0 "U2" H 4871 3946 50  0000 R CNN
+F 1 "DS18B20" H 4871 3855 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4100 3650 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 4950 4150 50  0001 C CNN
+	1    5100 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D49DB78
+P 7100 3700
+F 0 "J2" H 7180 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 7180 3601 50  0000 L CNN
+F 2 "" H 7100 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D49DE10
+P 7900 3700
+F 0 "J3" H 7820 3917 50  0000 C CNN
+F 1 "Conn_01x02" H 7820 3826 50  0000 C CNN
+F 2 "" H 7900 3700 50  0001 C CNN
+F 3 "~" H 7900 3700 50  0001 C CNN
+	1    7900 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5D49DEBD
+P 5800 5100
+F 0 "Q1" H 5991 5146 50  0000 L CNN
+F 1 "2N3904" H 5991 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6000 5025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5800 5100 50  0001 L CNN
+	1    5800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D49E00D
+P 2200 3050
+F 0 "C?" H 2315 3096 50  0000 L CNN
+F 1 "C" H 2315 3005 50  0000 L CNN
+F 2 "" H 2238 2900 50  0001 C CNN
+F 3 "~" H 2200 3050 50  0001 C CNN
+	1    2200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D49E0B3
+P 5100 5100
+F 0 "R?" H 5170 5146 50  0000 L CNN
+F 1 "R" H 5170 5055 50  0000 L CNN
+F 2 "" V 5030 5100 50  0001 C CNN
+F 3 "~" H 5100 5100 50  0001 C CNN
+	1    5100 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D49E274
+P 4450 3550
+F 0 "R?" H 4520 3596 50  0000 L CNN
+F 1 "R" H 4520 3505 50  0000 L CNN
+F 2 "" V 4380 3550 50  0001 C CNN
+F 3 "~" H 4450 3550 50  0001 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan M?
+U 1 1 5D49E660
+P 9100 3800
+F 0 "M?" H 9258 3896 50  0000 L CNN
+F 1 "Fan" H 9258 3805 50  0000 L CNN
+F 2 "" H 9100 3810 50  0001 C CNN
+F 3 "~" H 9100 3810 50  0001 C CNN
+	1    9100 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
